@@ -1,0 +1,28 @@
+.list-card {
+  border: 1px solid black;
+  padding: 20px;
+  margin-right: 10px;
+  & a {
+    color: black;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.add-list-button {
+    padding: 20px 0;
+    & a {
+      color: white;
+    }
+    background-color: black;
+    border: none;
+    &:hover {
+      background-color: white;
+      border: 1px solid black;
+      & a {
+        color: black;
+      }
+    }
+
+}

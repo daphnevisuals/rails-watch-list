@@ -4,13 +4,17 @@
 </div>
 
 <div class="my-list-wrapper">
-  <h2>All my lists</h1>
+  <div class="my-list-container">
+    <h2>All my lists</h1>
 
-  <ul>
-    <% @lists.each do |list| %>
-      <li><%= link_to list.name, list_path(list) %></li>
-    <% end %>
-  </ul>
+    <ul>
+      <% @lists.each do |list| %>
+        <div class="list-card">
+          <li><%= link_to list.name, list_path(list) %></li>
+        </div>
+      <% end %>
+    </ul>
+    <button class="add-list-button"><%= link_to "Add a new list", new_list_path %></button>
 
-  <%= link_to "Add a new list", new_list_path %>
+  </div>
 </div>
