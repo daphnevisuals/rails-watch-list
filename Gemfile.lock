@@ -234,6 +234,7 @@ GEM
 PLATFORMS
   arm64-darwin-22
   ruby
+  x86_64-darwin-20
   x86_64-linux
 
 DEPENDENCIES
@@ -262,6 +263,3 @@ RUBY VERSION
 
 BUNDLED WITH
    2.4.18
-
-PLATFORMS
-x_86_64-darwin-20
