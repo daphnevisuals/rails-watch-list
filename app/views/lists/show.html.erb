@@ -2,7 +2,8 @@
 <h5>All the Bookmarks for the list :</h5>
 <div>
   <ul>
-    <% @bookmarks.each do |bookmark| %>
+    <% @list.bookmarks.each do |bookmark| %>
+    <%# donne une array de chaque bookmark rattaché à 1 liste en particulier et itère dedans %>
       <li><p><em><%= bookmark.movie.title %></em> : <%= bookmark.comment %></p> <%=  %>
       <%= link_to "Delete the bookmark",
         bookmark_path(bookmark),
