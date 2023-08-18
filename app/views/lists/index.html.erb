@@ -1,9 +1,16 @@
-<h2>All my lists</h1>
+<div class="banner">
+  <h1>Save any kind of movies !</h1>
+  <h4>Create lists and add bookmarks !</h4>
+</div>
 
-<ul>
-  <% @lists.each do |list| %>
-    <li><%= link_to list.name, list_path(list) %></li>
-  <% end %>
-</ul>
+<div class="my-list-wrapper">
+  <h2>All my lists</h1>
 
-<%= link_to "Add a new list", new_list_path %>
+  <ul>
+    <% @lists.each do |list| %>
+      <li><%= link_to list.name, list_path(list) %></li>
+    <% end %>
+  </ul>
+
+  <%= link_to "Add a new list", new_list_path %>
+</div>

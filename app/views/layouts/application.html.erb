@@ -11,6 +11,18 @@
   </head>
 
   <body>
+    <div class="navbar">
+    <p><%= link_to 'SM', root_path %></p>
+      <ul class="d-flex gap-2">
+        <% unless @_request.fullpath == root_path %>
+        <%# unless le request fullpath est égal au root, afficher "My Lists" %>
+          <li><%= link_to "My lists", root_path %></li>
+        <% end %>
+        <li><%= link_to "New list", new_list_path %></li>
+      </ul>
+    </div>
+
     <%= yield %>
+
   </body>
 </html>
